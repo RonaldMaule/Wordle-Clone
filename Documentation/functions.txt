@@ -1,0 +1,81 @@
+Main:
+	Calls the intro function. Then in loop calls the game function.
+	When loop ends it calls the close function.
+
+	Takes no arguments.
+	No return.
+
+Intro:
+	Displays the intro and rules. Then asks user to press enter to start.
+	Calls get_previous_words
+
+	Takes no arguments.
+	No return.
+
+Game:
+	Calls get_word function. Gives user 6 tries to guess word. After
+	every guess calls is_correct function and display_guesses function.
+	After correct guess or 6 incorrect guesses it calls play_again function.
+
+	Takes no arguments
+	Outputs booleon which determines if the user wants to play again.
+
+Close:
+	Thanks player for playing. Calls write_previous_words.
+
+	Takes no arguments.
+	No return.
+
+get_previous_words:
+	Gets last twenty guesses from text file and stores them in a list
+
+	Takes no arguments.
+	No return.
+
+get_word:
+	Gets random word for the game.
+	Word cannot be the same as the previous 20 words.
+	Stores these words in txt file.
+
+	Takes no arguments.
+	Returns chosen word.
+
+Update_previous_words:
+	Updates the previous_words list with the new guess.
+
+	Takes current word as argument.
+	No return.
+
+Get_value:
+	Gets value of the guess.
+
+	Takes in guess and correct word.
+	Returns tuple of guess and value.
+
+display_guesses:
+	Displays the player's guesses and their values.
+	If not correct display 0.
+	If letter is correct display 1.
+	If position and letter are correct display 2.
+
+	Takes in list of previous guesses and their values.
+	No return.
+
+is_correct:
+	Determines if user's guess is correct.
+
+	Takes guess and correct answer.
+	Outputs boolean.
+
+play_again:
+	If player was correct congratulate them. Otherwise say nice try.
+	Asks if player would like to play again.
+
+	Takes boolean for correct or not.
+	Return boolean for whether or not player wants to play again.
+
+write_previous_words:
+	Writes previous guesses from list to text file.
+
+	Takes no arguments.
+	No return.

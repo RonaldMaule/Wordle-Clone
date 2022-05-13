@@ -1,0 +1,11 @@
+We have a program which randomly selects a word. It then gives the user 6 guesses to guess the word. If they guess a letter right in the wrong place it
+gives a one. If they guess the correct place and letter it gives a 2. If it is the wrong letter and sybmbol it outputs a 0.
+
+The main function should have a loop to play the game when the player starts the program. It tells the player how to play and then when the player presses
+enter it chooses a word. It then tells the player to guess the word. The player makes a guess and it displays the guess along with the numbers for each letter.
+
+The player gets up to 6 guesses to guess the word corretly. After each guess the program displays all previous guesses and their numbers. When the player guesses
+correctly the program tells them they won and asks if they want to play again. If the player makes 6 guesses and doesn't get it the program tells them the word
+and asks if they want to play again.
+
+The last twenty words to be used will be stored in a text file so repeats are less frequent
